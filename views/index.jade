@@ -5,3 +5,55 @@ html(lang="jp")
 		title acc
 	body
 		p acc
+		table(border="0")
+			form(method="post", action="/insert")
+				tr
+					td title
+					td
+						input(type="text", name="title")
+				tr
+					td url
+					td
+						input(type="text", name="url")
+				tr
+					td user_id
+					td
+						input(type="text", name="user_id")
+				tr
+					td mail
+					td
+						input(type="text", name="mail")
+				tr
+					td password
+					td
+						input(type="text", name="password")
+				tr
+					td description
+					td
+						input(type="text", name="description")
+				tr
+					td
+						button(type="submit") submit
+		table(border="1")
+			tr
+				th id
+				th ip
+				th title
+				th user_id
+				th mail
+				th password
+				th description
+				th createdAt
+				th updatedAt
+			each content in contents
+				tr
+					td #{content.id}
+					td #{content.ip}
+					td
+						a(href="#{content.url}" target="_blank") #{content.title}
+					td #{content.user_id}
+					td #{content.mail}
+					td #{content.password}
+					td #{content.description}
+					td #{content.createdAt}
+					td #{content.updatedAt}
