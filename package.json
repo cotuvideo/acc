@@ -1,0 +1,22 @@
+{
+  "name": "acc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cotuvideo/acc.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cotuvideo/acc/issues"
+  },
+  "homepage": "https://github.com/cotuvideo/acc#readme",
+  "dependencies": {
+    "jade": "^1.11.0"
+  }
+}
